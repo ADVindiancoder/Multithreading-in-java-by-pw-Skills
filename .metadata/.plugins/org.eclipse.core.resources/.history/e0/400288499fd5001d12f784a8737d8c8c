@@ -1,0 +1,10 @@
+package com.ADVindiancodervinaykumar.multithreading;
+
+public class By_Implementing_Runnable_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

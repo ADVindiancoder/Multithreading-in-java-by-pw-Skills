@@ -1,0 +1,106 @@
+package com.ADVindiancodervinaykumar.multithreading;
+import java.util.*;
+
+class message extends Thread{
+	public void run() {
+		
+		Scanner s=new Scanner(System.in);
+		System.out.println("Hey man let's Start the chating");
+		System.out.println("Please say somthing");
+		String name=s.next();
+		
+		System.out.println("How are you");
+		String name1=s.next();
+		
+		System.out.println("what are you doing?");
+		String name2=s.next();
+		
+		System.out.println("Do you use LinkedIn");
+		String name3=s.next();
+		
+		System.out.println("Ok..By.............");
+		String name4=s.next();
+		
+		System.out.println(name);
+		System.out.println(name1);
+		System.out.println(name2);
+		System.out.println(name3);
+		System.out.println(name4);
+	}
+}
+
+
+class calculation extends Thread{
+			
+			public void run() {
+				
+				Scanner sc=new Scanner(System.in);
+				int button=sc.nextInt();
+				System.out.println("Here you can Perform calculation");
+				
+				System.out.println("Please ! Enter the first number");
+				int num1=sc.nextInt();
+				System.out.println("Please ! Enter the Second number");
+				int num2=sc.nextInt();
+				int vinay1=num1+num2;
+				int vinay2=num1-num2;
+				int vinay3=num1*num2;
+				int vinay4=num1/num2;
+				
+				
+				
+				int Buttom =sc.nextInt();
+				
+				switch(button) {
+			
+				case 1: System.out.println("Press one for Add the Number"+vinay1);
+				break;
+				
+				case 2:	System.out.println("Press Two For Substract the number"+vinay2);
+				break;
+				
+				case 3: 		System.out.println("Press three fr Multiple the number"+vinay3);
+				break;
+				
+				case  4: 		System.out.println("Preass four for division the number "+vinay4);
+				break;
+				
+				default : 		System.out.println("Sorry! I can perform only addition , Substraction, multiplication, and division");
+				
+				
+				}
+				
+				if(Buttom==1) {
+					System.out.println(1);
+				}
+				
+				else if(Buttom==2) {
+					System.out.println(2);
+				}
+				
+				else if(Buttom==3) {
+					
+					System.out.println(3);
+					
+				}
+				else {
+					System.out.println(4);
+				}
+				
+			}
+		}
+
+		class lunch{
+			
+			public static void main(String args[]) {
+				
+				message m=new message();
+				m.start();
+				
+				calculation c=new calculation();
+				c.start();
+				
+				
+			}
+		}
+		

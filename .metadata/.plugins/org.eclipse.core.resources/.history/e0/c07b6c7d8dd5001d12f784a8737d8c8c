@@ -1,0 +1,10 @@
+package com.ADVindiancodervinaykumar.multithreading;
+
+public class creating_the_thread_by_extending_thread_class_3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
