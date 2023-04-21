@@ -27,6 +27,7 @@ public class Join_method_in_multithreading {
 
 	public static void main(String[] args)  throws Exception{
 		
+		
 		System.out.println("main thread");
 		
 		demo d=new demo();
